@@ -1,0 +1,67 @@
+:root{
+    /* Fonts */
+    --title-font: "Montserrat", sans-serif;
+    --paragraph-font: "Lora", serif;
+
+    /* Colors */
+    --primary-color: #2E8B57;
+    --secondary-color: #E1B382;
+    --accent-color: #FF7F50;
+    --text-color-1:#FAFAFA;
+    --text-color-2: #333333;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: var(--paragraph-font);
+}
+
+
+#course-title{
+    display: block;
+
+    text-align: center;
+    font-family: var(--title-font);
+    font-size: 2rem;
+
+    background-color: var(--primary-color);
+    color: var(--text-color-2);
+
+    border: 5px solid var(--accent-color);
+    border-radius: 5px;
+
+    padding: 50px;
+}
+
+header ul{
+    display: flex;
+    list-style-type: none; /* This is the declaration to get fine visually those links in 'a' ancor tags */
+    
+    justify-content: space-evenly;
+    padding: 25px;
+
+    background-color: var(--accent-color);
+   
+}
+
+header a{
+    text-decoration: none;
+    color: var(--text-color-2);
+
+}
+
+main{
+    text-align: center;
+    max-width: 500rem;
+}
+
+main h1{
+    font-family: var(--title-font);
+    padding: 25px;
+}
