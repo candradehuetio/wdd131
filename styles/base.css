@@ -4,9 +4,9 @@
     --paragraph-font: "Lora", serif;
 
     /* Colors */
-    --primary-color: #2E8B57;
-    --secondary-color: #E1B382;
-    --accent-color: #FF7F50;
+    --primary-color: #2C3E50;
+    --secondary-color: #A8D5BA;
+    --accent-color: #F9D342;
     --text-color-1:#FAFAFA;
     --text-color-2: #333333;
 
@@ -31,7 +31,7 @@ body{
     font-size: 2rem;
 
     background-color: var(--primary-color);
-    color: var(--text-color-2);
+    color: var(--text-color-1);
 
     border: 5px solid var(--accent-color);
     border-radius: 5px;
