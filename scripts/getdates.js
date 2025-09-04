@@ -9,10 +9,8 @@ by the "innerHTML" property. */
 
 currentdate.innerHTML = `<span class="highlight">${new Intl.DateTimeFormat("en-US", { dateStyle: "full" }).format(today)} </span>`;
 
+// Last modify
 
-alert(document.lastModified);
-
-let oLastModif = new Date(document.lastModified);
 
 
 
