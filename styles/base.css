@@ -52,7 +52,7 @@ header li{
     padding: 25px;
 }
 
-header li:hover {
+header a:hover {
     text-decoration: overline var(--primary-color);
     font-weight: bolder;
 
