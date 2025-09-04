@@ -21,8 +21,8 @@ if (Number.isNaN(lastVisit) || lastModif > lastVisit) {
 
     if (isFinite(lastVisit)) {
         // Replaced the alert to the innerHTML property to insert a span with the date of change
-        const currentModify = document.querySelector("#lastModified");
-        const dateModify = new Date();
-        currentModify.innerHTML = `<span class="highlight">${new Intl.DateTimeFormat("en-US", { dateStyle: "full" }).format(dateModify)} </span>`;
+    const currentModify = document.querySelector("#lastModified");
+    const dateModify = new Date();
+    currentModify.innerHTML = `<span class="highlight">${new Intl.DateTimeFormat("en-US", { dateStyle: "full" }).format(dateModify)} </span>`;
     }
 }
