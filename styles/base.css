@@ -33,7 +33,6 @@ body{
     background-color: var(--primary-color);
     color: var(--text-color-1);
 
-    border: 5px solid var(--accent-color);
     border-radius: 5px;
 
     padding: 50px;
@@ -44,10 +43,19 @@ header ul{
     list-style-type: none; /* This is the declaration to get fine visually those links in 'a' ancor tags */
     
     justify-content: space-evenly;
-    padding: 25px;
 
     background-color: var(--accent-color);
-   
+    font-size: 20px;
+}
+
+header li{
+    padding: 25px;
+}
+
+header li:hover {
+    text-decoration: overline var(--primary-color);
+    font-weight: bolder;
+
 }
 
 header a{
@@ -55,6 +63,7 @@ header a{
     color: var(--text-color-2);
 
 }
+
 
 main{
     text-align: center;
