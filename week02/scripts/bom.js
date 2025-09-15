@@ -1,13 +1,35 @@
-const input = document.querySelector("#favchap");
 const button = document.querySelector("button");
+const input = document.querySelector("#favchap");
 const list = document.querySelector("#list");
 
-const li = documment.createElement("li");
-const deleteButton = document.createElement("button");
+button.addEventListener("click", function () {
 
-li.textContent = input.value;
-deleteButton.textContent("❌");
 
-li.appendChild(deleteButton);
+    if (input.value.trim() != "") {
 
-list.append(li);
+        /// creating li and delete button elements
+        const li = document.createElement("li");
+        const deleteButton = document.createElement("button");
+
+        /// what the user types in the input will be text in the li
+        li.textContent = input.value;
+
+        /// delete button created and set to the right side of the li element
+        deleteButton.textContent = "❌";
+        li.appendChild(deleteButton);
+
+        /// append everything to the list <ul> element
+        list.append(li);
+
+
+        /// click event to remove the 
+        deleteButton.addEventListener("click", function () {
+            list.removeChild(li);
+        });
+
+
+        input.value = "";
+        input.focus();
+    }
+
+});
