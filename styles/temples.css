@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Roboto, sans-serif;
+}
+
+/*---------------- HEADER SECTION --------------------*/
+
+header{
+    font-weight: bolder;
+    font-size: 1.5rem;
+    padding: 1.5rem;
+    background-color:cornflowerblue;
+    color: black;
+}
+
+header nav {
+    display: flex;
+}
+
+.navigation{
+    display: flex;
+    
+    gap: 2rem;
+    list-style: none;
+    margin: 0 auto;
+    max-width: 760px;
+}
+
+.navigation a{
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+
+.navigation a:hover{
+    background-color: black;
+    color: beige;
+}
+
+#menu-icon{
+    display: none;
+}
+
+#menu-icon::before{
+    content: "☰";
+}
+
+#menu-icon.open::before{
+    content: "✕";
+}
+/*----------------- MAIN SECTION --------------------*/
+
+main{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+h1 {
+    text-align: center;
+    margin: 2.5rem auto;
+}
+
+.container {
+    display: grid;
+    /* this builds the columns and rows to be repeat and autofit the content
+    according to the window browser size*/
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 15px;
+
+    margin-bottom: 2rem;
+}
+figure{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+figure img {
+    width: 20rem;
+    height: 15rem;
+}
+
+/*------------- FOOTER SECTION --------------------*/
+footer{
+    display: grid;
+    gap: 1rem;
+    font-weight: bolder;
+    justify-content: center;
+    padding: 1.5rem;
+    background-color: cornflowerblue;
+}
+
+footer p{
+    text-align: center;
+}
