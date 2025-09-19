@@ -122,13 +122,18 @@ img{
 
 .profile-photo{
     float: right;
-    margin: auto auto 50px auto;
+    margin: auto auto 80px auto;
 }
 
 h3{
+    padding: 10px;
     color: var(--text-color-2);
     margin-top: 40px;
     border-top: solid 1px var(--primary-color);
+}
+p{
+    text-align: start;
+    padding: 15px;
 }
 
 .inside-tag{
