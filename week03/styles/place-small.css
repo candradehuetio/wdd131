@@ -1,0 +1,96 @@
+:root{
+    --text-font: "Roboto", sans-serif;
+    --title-font: "Zalando Sans Expanded", sans-serif;
+}
+
+@media screen and (max-width: 900px){
+    * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+    
+        .hero img {
+            width: 100%;
+            height: auto;
+        }
+
+        picture{
+            padding-bottom: 5px;
+            background-color: #1400a8;
+        }
+    
+    
+        .yellow {
+            text-align: center;
+            padding: 5rem;
+            background-color: #fff700;
+        }
+    
+    
+        .yellow h1 {
+            font-family: var(--title-font);
+            font-size: 50px;
+        }
+    
+    
+        .blue {
+            padding: 2rem;
+            background-color: #1400a8;
+        }
+
+
+        
+        /* --- DATA ---*/
+        .data{
+            position: static;
+            font-family: var(--text-font);
+        }
+
+        .tag{
+            font-size: 2rem;
+            text-align: center;
+            margin: 2rem;
+        }
+
+        .tag .weather-icon{
+            margin-top: 10px;
+        }
+
+        /* ---- WEATHER ----*/
+
+        .weather{
+            position: static;
+            font-family: var(--text-font);
+            margin-bottom: 2rem;
+        }
+
+
+        /* ---- TABLES ----*/
+        table{
+            width: 100%;
+        }
+
+        .bold{
+            font-weight: bolder;
+            text-align: end;
+            padding-right: 1rem;
+        }
+
+
+        footer {
+            padding: 4rem;
+            text-align: center;
+            font-size: 1.2rem;
+            font-family: var(--text-font);
+            background-color: #1400a8;
+            color: white;
+        }
+
+        .red{
+            background-color: red;
+            padding: 20px;
+        }
+
+
+}

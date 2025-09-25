@@ -1,0 +1,115 @@
+:root{
+    --text-font: "Roboto", sans-serif;
+    --title-font: "Zalando Sans Expanded", sans-serif;
+}
+@media screen and (min-width: 900px){
+    * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+    
+        .hero img {
+            width: 100%;
+            height: auto;
+            position: relative;
+            /* IMAGE POSITIONED RELATIVE*/
+        }
+    
+    
+        .yellow {
+            text-align: center;
+            padding: 5rem;
+            background-color: #fff700;
+        }
+    
+    
+        .yellow h1 {
+            font-family: var(--title-font);
+            font-size: 100px;
+        }
+    
+    
+        .blue {
+            padding: 2rem;
+            background-color: #1400a8;
+        }
+    
+    
+        /* -----------DATA TAG------*/
+        .data {
+            position: absolute;
+            /* DATA TAG POSITIONED ABSOLUTE*/
+            font-family: var(--text-font);
+            top: 25rem;
+            left: 2rem;
+    
+            background-color: rgb(255, 255, 255, 0.6);
+        }
+    
+        .tag {
+            margin-top: 0;
+            background-color: rgb(255, 0, 0, 0.8);
+            position: relative;
+            top: 10px;
+            right: 20px;
+    
+            font-size: 25px;
+            padding: 1rem;
+        }
+
+        .tag .weather-icon{
+            display: none;
+        }
+
+        
+    
+        .data .table_data {
+            padding: 3rem;
+            font-size: 1rem;
+    
+        }
+    
+        /* ------ WEATHER TAG -------------- */
+    
+        .weather {
+            position: absolute;
+            font-family: var(--text-font);
+            top: 50rem;
+            right: 2rem;
+    
+            background-color: rgb(255, 255, 255, 0.6);
+        }
+
+        .weather .tag h2::after{
+            content: "⛅";
+        }
+    
+        .weather .table_weather {
+            padding: 3rem;
+            font-size: 1rem;
+        }
+    
+        /* ----TABLES----*/
+    
+        .bold {
+            font-weight: bolder;
+            padding-right: 1rem;
+            text-align: end;
+        }
+
+    
+        footer {
+            padding: 3rem;
+            text-align: center;
+            font-size: 1.2rem;
+            font-family: var(--text-font);
+            background-color: #1400a8;
+            color: white;
+        }
+
+        .red {
+            background-color: red;
+            padding: 20px;
+        }
+}
