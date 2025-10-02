@@ -1,0 +1,25 @@
+@media screen and (max-width: 900px) {
+    .navigation a {
+        display: none;
+    }
+
+    #menu-icon {
+        display: block;
+        text-decoration: none;
+        color: black;
+    }
+
+    .close {
+        display: none;
+    }
+
+    .open {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .open a {
+        display: block;
+    }
+}
