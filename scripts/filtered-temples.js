@@ -193,7 +193,8 @@ function createTempleCard(filteredTemples=temples)
         area.innerHTML = `<span class="label">Area:</span> ${temple.area}`;
         img.setAttribute("src", temple.imageUrl);
         img.setAttribute("alt", `${temple.templeName} Temple`);
-        img.setAttribute("width", "100%");
+        img.setAttribute("width", "400");
+        img.setAttribute("height", "250");
         img.setAttribute("loading", "lazy");
         
         // Appendig everything
