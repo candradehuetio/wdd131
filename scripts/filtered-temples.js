@@ -172,7 +172,11 @@ function getSmallTemples()
 // Create Temple Card
 function createTempleCard(filteredTemples=temples)
 {
-    document.querySelector(".container").innerHTML = "";
+    const container = document.querySelector(".container");
+    container.innerHTML = "";
+
+    const fragment = document.createDocumentFragment();
+
     filteredTemples.forEach(temple => {
 
         // Creating tags for every image object container
@@ -199,11 +203,7 @@ function createTempleCard(filteredTemples=temples)
         card.appendChild(area);
         card.appendChild(img);
 
-    
-        document.querySelector(".container").append(card);
-        
-
-
-
+        fragment.appendChild(card);
     });
+    container.appendChild(fragment);
 }
