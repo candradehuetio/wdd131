@@ -42,7 +42,7 @@ body{
     margin: 20px;
     border: 2px solid var(--secondary-color);
     border-radius: 1px solid var(--secondary-color);
-    border-radius: 5px;
+    border-radius: 1px solid var(--secondary-color);
 }
 
 .flag .yellow{
